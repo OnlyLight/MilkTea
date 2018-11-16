@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Milk Tea</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/music-store.css">
+    <link rel="stylesheet" href="../css/font-custom.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+
+    <script href="../scripts/jquery.min.js"></script>
+    <script href="../scripts/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script href="../scripts/music-store.js"></script>
+
+    <!--Angular-->
+    <script src="../scripts/angular.min.js"></script>
+</head>
+<body ng-app="">
+    <div>
+        <div ng-include="'header-admin.html'"></div>
+
+        <div class="row" style="margin-right: 0">
+            <div class="col-sm-12">
+                <div ng-include="'sidebar.html'"></div>
+
+                <div class="col-lg-10">
+                    <div>
+                        <h2 class="title">PRODUCTS</h2>
+                        <div style=" margin-left: 2rem">
+                            <form action="#" method="post" style="margin-bottom: 2rem;">
+                                <div class="form-group">
+                                    <label>Code:</label>
+                                    <input type="number" placeholder="Code" name="id" required="true" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>Name:</label>
+                                    <input type="text" placeholder="Name" name="userName" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>Price:</label>
+                                    <input type="text" placeholder="Price" name="passWord" class="form-control">
+                                </div>
+                                <button name="addAccount" class="btn btn-default">Add</button>
+                            </form>
+                        </div>
+                    </div>
+                    <!--table info-->
+                    <table class="table .table-striped">
+                        <tr>
+                            <th>CODE</th>
+                            <th>NAME</th>
+                            <th>PRICE</th>
+                            <th>CATEGORIES</th>
+                            <th>&nbsp;</th>
+                        </tr>
+
+                        <tr>
+                            <td>1</td>
+                            <td>Trà Sữa Trân Châu Đường Đen</td>
+                            <td>45.000</td>
+                            <td>Trà sữa</td>
+                            <td>
+                                <button class="btn btn-primary">Edit</button>
+                                <button class="btn btn-danger">Delete</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>Trà Sữa Thái Xanh</td>
+                            <td>54.000</td>
+                            <td>Trà sữa</td>
+                            <td>
+                                <button class="btn btn-primary">Edit</button>
+                                <button class="btn btn-danger">Delete</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>Trà Đào</td>
+                            <td>28.000</td>
+                            <td>Trà sữa</td>
+                            <td>
+                                <button class="btn btn-primary">Edit</button>
+                                <button class="btn btn-danger">Delete</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div ng-include="'_footer2.html'"></div>
+    <!--End Footer-->
+</body>
+</html>
